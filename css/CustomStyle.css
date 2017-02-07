@@ -1,3 +1,120 @@
+/* it will add background image on every pages */
+body
+{
+	padding-top:50px;
+	lbackground-color: #222; 
+	font-family: 'Oswald', sans-serif;
+	background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* it changes navigation font's color and background */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: red;
+    background-color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: red;
+}
+
+.white-large-font
+{
+	color:white;
+	font-size: X-large;
+	margin-top: 70px;
+	line-height: 125%;
+	text-align: justify;
+	text-shadow: 2px 2px red;/* this line for text shadow */
+}
+sspan
+{
+	letter-spacing: 10px;
+	background:red;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-top: -10px;
+}
+
+.navbar, .navbar-inverse .navbar-brand {
+    color: red;
+	
+}
+
+/* just to add on singular page on the body */
+.full {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.container
+{
+	lbackground-color:#a94442;
+	/* background-color: #4d4d4d; */
+}	
+
+.navbar-fixed-top{
+	border-width:0 0 3px;
+	border-color:#222;	
+}
+
+.animation 
+{
+	font-size:38px;
+    width: 250px;
+	border-radius:0px;
+    height: 35px;
+	color:red;
+    /* background: #a94442; */
+	 background: #222;
+    position: relative;
+    /* -webkit-animation: mymove 20s infinite; /* Safari 4.0 - 8.0 */ */
+	-webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: 3;
+    animation: mymove 3s;
+	animation-iteration-count: 3;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+/* 
+.navbar-custome
+{
+	color: yellow;
+    background-color: #8B0000;
+
+}
+.coloarMe
+{
+	color: #ffff00;
+}
+.nav.navbar-nav ul li a {
+   color: yellow;
+ }
+
+.nav.navbar-nav a:hover {
+ color: #8B0000;
+}
+.stick{
+	position:fixed;
+	top:0px;
+	
+}
 .customDiv
 {
 	margin:3px;
@@ -27,8 +144,42 @@
 	background-color:silver;
 	text-align:center;
 	font-size:large;
-}
-body
+} 
+.logo
 {
-	padding-top:50px;
+	height: 40px;
+ 	margin-top: -10px;
+	margin-right: 50px;
 }
+
+.imageGetBigger
+{
+	
+    -webkit-transition: width 1s, height 1s; For Safari 3.1 to 6.0
+    transition: width 1s, height 1s; }
+.imageGetBigger:hover 
+{
+    width: 500px;
+    height: 500px;
+
+	
+}
+.background-imagews
+{
+	
+	background:'images/waterfall.jpg';
+    background-size: 1440px 800px;
+    background-repeat:no-repeat;
+}
+
+div.panel-body.backgrounpd-images{
+    color:#fff;
+    text-align:center;
+    background:url('../images/background.jpg');
+    background-size:cover;
+    background-position:center;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+ */

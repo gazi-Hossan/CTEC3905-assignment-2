@@ -10,6 +10,7 @@
 		<!-- Bootstrap -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/CustomStyle.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -17,698 +18,90 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	  </head>
-		<body>
+		<body class="full" >
 			<div class="container">
 				<div class="row">
-        			<div class="panel panel-default">
-           				 <div class="panel-heading">
-			                <button class="btn btn-primary" data-target="#imageGallery" data-toggle="collapse">Image Gallery</button>
-            			</div>
-			            <div class="panel-body collapse" id="imageGallery">
-			                <div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/waterfall.jpg" class="thumbnail">
-									<p>Waterfall</p>
-									<img src="images/waterfall.jpg" class="img-responsive"/>
-								</a>
+					<div class="col-lg-12">
+						<nav class="navbar navbar-inverse navbar-fixed-top">
+							<div class="container">
+								<div class="navbar-header">
+									
+									  <h1><a class="navbar-brand animation" href="#">Bombay Bites</a></h1>
+									<!-- <div class="navbar-header"></div> -->
+									<!-- <a class="navbar-brand" href="#"><img alt="Bombay" class="logo" src="images/home-logo.jpg"></a>
+										<a class="navbar-brand" href="#"><h1>Bombay Bites</h1></a> -->
+									<button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<div class="navbar-collapse collapse navbar-right" id="mainNavbar">
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="photogallery.html">Photo Gallery</a></li>
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">About</a></li>
+										<li><a href="#">Product</a></li>
+									</ul>
+								</div>
 							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/bamboo.png" class="thumbnail">
-									<p>Bamboo</p>
-									<img src="images/bamboo.png" class="img-responsive"/>
-								</a>
-							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/landscape.jpg" class="thumbnail">
-									<p>Landscape</p>
-									<img src="images/landscape.jpg" class="img-responsive"/>
-								</a>
-							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/waterfall.jpg" class="thumbnail">
-									<p>Waterfall</p>
-									<img src="images/waterfall.jpg" class="img-responsive"/>
-								</a>
-							</div>
-			            </div>
-		        	</div>
-		    	</div>
+						</nav>
+					</div>	
+				</div>
 				<div class="row">
-					<div class="col-xs-12">
-						<br/><br/>
-						<div class="panel panel-info">
+					
+					<div class =" col-xs-6 col-sm-4 col-md-4 col-lg-4">
+						<p class="white-large-font"> <span>Bombay Bites</span> offers something different to the traditional Indian takeaway. 
+						We've taken the great British love affair for Indian food and created a simple, quick and affordable way to enjoy it. 
+						Our menu allows you to order the classic favourites but most of our customers go for one of our delicious layered Bombay boxes. 
+						A self-contained meal conveniently eaten straight from the box. To make ordering super easy we've created a list of our 'Most Popular Boxes'. 
+						9 of the best and most frequently ordered combinations. </p>
+						<!-- <div class="panel panel-danger">
 						    <div class="panel-heading">
 						        <h3 class="panel-title">What is bootstrap</h3>
 						    </div>
 						    <div class="panel-body">
 						        Bootstrap is a free, open-source and is the most popular HTML, CSS, and JavaScript framework developed by twitter for creating responsive web applications. It includes HTML and CSS based design templates for common user interface components like Buttons, Dropdowns, Typography, Tabs, Forms, Tables, Navigations, Alerts, Modals, Accordion, Carousel etc. along with optional JavaScript extensions. Bootstrap framework is based on open standards - HTML, CSS and JavaScript. This means bootstrap can be used with any server side technology and any platform. You can use it with any web application built with any server side technology like ASP.NET, JAVA, PHP etc.
 						    </div>
-						    <div class="panel-footer panel-info">
+						    <div class="panel-footer panel-danger">
 						        PragimTech
 						    </div>
-						</div>
-
-
+						</div> -->
 					</div>
+					
 				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<br/><br/>
-						<ul class="pagination">
-							<li><a href="#">&laquo;</a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li class="active"><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">&raquo;</li>
-							
-						</ul>
-					
-					
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<br/><br/>
-						<ul class="pager">
-							<li class="previous"><a href="#">&larr;Previous</a></li>
-							<li class="next"><a href="#">Next&rarr;</a></li>
-						</ul>
-					
-					
-					</div>
-				</div>
-			
-				<div class="row">
-					<div class="col-lg-12">
-					<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="navbar-collapse collapse" id="mainNavbar">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Product</a></li>
-								
-							</ul>
-							<form class="navbar-form navbar-left">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Search">
-								</div>
-								<button type="submit" class="btn btn-default" > Submit</button>
-							</form>
-							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="#">Subscribe</a></li>
-							</ul>
-							
-						</div>
-					<div>
-					</nav>
-					
-					
-					
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12"></div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-xs-12">
-					<ul class="nav nav-pillss nav-justified">
-					
-						
-					
-						<li class="active dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<span class="glyphicon glyphicon-home"></span>  Home
-								<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-							<li class="dropdown-header"><strong>Institute</strong></li>
-							<li><a href="#">School</a></li>
-							<li><a href="#">College</a></li>
-							<li class="disabled"><a href="#">University</a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header"><strong>Institute 1</strong></li>
-							<li><a href="#">School 1</a></li>
-							<li><a href="#">College 1</a></li>
-							<li><a href="#">University 1</a></li>
-						</ul>
-						</li>
-						<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> contact</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> about</a></li>
-					</ul>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-xs-12">
-					<ul class="nav nav-tabs nav-justified">
-						<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> contact</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> about</a></li>
-					</ul>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-xs-12">
-					<ul class="nav nav-pills nav-stacked">
-						<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> contact</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> about</a></li>
-					</ul>
-					</div>
-				</div>
-				<form>
-					<div class="row">
-							<div class="form-group col-xs-4">
-								<label for="inputUserName" class="control-label"> Income </label>
-								<input  class="form-control input-lg" placeholder="annual earnings" type="text" id="inputpassword"/>
-							</div>
-					</div>		
-				</form>
 				
-			<div class="row">
-				<div class="col-xs-12">
-					<form class="form-horizontal">
-							<div class="form-group">
-								<label for="inputUserName" class="control-label col-xs-2"> Username</label>
-								<div class="col-xs-3">
-								<input  class="form-control" placeholder="Login Username" type="text" id="inputUserName"/>
-								</div>
-							</div>
-							
-							
-							<div class="form-group has-success has-feedback">
-								<label for="inputUserName" class="control-label col-xs-2"> Income </label>
-								<div class="col-xs-3">
-								<div class="input-group">
-								<span class="input-group-addon">£</span>
-								<input  class="form-control input-lg" placeholder="annual earnings" type="password" id="inputpassword"/>
-								</div>
-								<span class="glyphicon glyphicon-ok form-control-feedback"></span>
-								<span class="help-block">Your annual income</span>
-								</div>
-							</div>
-							
-							<div class="form-group has-success has-feedback">
-								<label for="inputUserName" class="control-label col-xs-2"> Name</label>
-								<div class="col-xs-3">
-								<div class="input-group">
-								<span class="input-group-addon">*</span>
-								<input  class="form-control input-sm" placeholder="Full Name" type="password" id="inputpassword"/>
-								</div>
-								<span class="glyphicon glyphicon-ok form-control-feedback"></span>
-								<span class="help-block">Enter full name</span>
-								</div>
-							</div>
-							
-							<div class="form-group has-success has-feedback">
-								<label for="inputUserName" class="control-label col-xs-2"> Password</label>
-								<div class="col-xs-3">
-								<input  class="form-control" placeholder="Insert password" type="password" id="inputpassword"/>
-								<span class="glyphicon glyphicon-ok form-control-feedback"></span>
-								<span class="help-block">Strong password</span>
-								</div>
-							</div>
-							
-							
-							<div class="form-group has-warning has-feedback">
-								<label for="inputUserName" class="control-label col-xs-2"> Password</label>
-								<div class="col-xs-3">
-								<input  class="form-control" placeholder="Insert password" type="password" id="inputpassword"/>
-								<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-								<span class="help-block">Weak password</span>
-								</div>
-							</div>
-							<div class="form-group has-error has-feedback">
-								<label for="inputUserName" class="control-label col-xs-2"> Age</label>
-								<div class="col-xs-3">
-								<input  class="form-control" placeholder="Insert password" type="Text" id="inputpassword"/>
-								<span class="glyphicon glyphicon-remove form-control-feedback"></span>
-								<span class="help-block">Invalid input</span>
-								</div>
-							</div>
-							<div class="form-group">
-							<div class="col-sm-3 col-sm-offset-2">
-							<button type="submit" class="btn btn-default">Login</button>
-							</div>
-							</div>
-						</form>
-				<>
-				<div class="col-xs-12">
-					<form>
-					<div class="checkbox">
-						<label><input type="checkbox" value="option1"/>Option 1</label>
-					</div>
-					<div class="checkbox">
-						<label><input type="checkbox" value="option2"/>Option 2</label>
-					</div>
-					<div class="checkbox disabled">
-						<label><input disabled type="checkbox" value="option3"/>Option 3</label>
-					</div>
-					
-					</form>
-				</div>
+				
+				
+				
+				
+				
 			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<form>
-					
-						<label class="checkbox-inline"><input type="checkbox" value="option1"/>Option 1</label>
-					
-						<label class="checkbox-inline"><input type="checkbox" value="option2"/>Option 2</label>
-					
-						<label class="checkbox-inline"><input type="checkbox" value="option3"/>Option 3</label>
-					
-					
-					</form>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					
-					<form>
-					<!-- name="" value of name could be anything. but all the name should
-					be same to be exclusive -->
-						<div class="radio">
-						<label><input type="radio" name="radiogroups" value="option1"/>Option 1</label>
-						</div>
-						
-						<div class="radio">
-						<label><input type="radio" name="radiogroups" value="option2"/>Option 2</label>
-						</div>
-						
-						<div class="radio disabled">
-						<label><input type="radio" name="radiogroups" disabled value="option3"/>Option 3</label>
-						</div>
-					</form>
-					<form>
-					<!-- name="" value of name could be anything. but all the name should
-					be same to be exclusive -->
-						
-						<label class="radio-inline"><input type="radio" name="radiogroups" value="option1"/>Option 1</label>
-						<label class="radio-inline"><input type="radio" name="radiogroups" value="option2"/>Option 2</label>
-						<label class="radio-inline disabled"><input type="radio" name="radiogroups" disabled value="option3"/>Option 3</label>
-						
-					</form>
-					<div class="col-lg-3">
-					<br/>
-					<form>
-						<select class="form-control">
-							<option>Option 1</option>
-							<option>Option 2</option>
-							<option>Option 3</option>
-							<option>Option 4</option>
-							<option>Option 5</option>
-						</select>
-					</form>
-					</div>
-					<div class="col-lg-3">
-					<br/>
-					<form>
-						<select multiple class="form-control">
-							<option>Option 1</option>
-							<option>Option 2</option>
-							<option>Option 3</option>
-							<option>Option 4</option>
-							<option>Option 5</option>
-						</select>
-					</form>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<form>
-					</form>
-				</div>
-			</div>
-			<div class="row"></div>
-			<div class="row"></div>
-				<div class="row">
-				<br/><br/>
-					<form class="form-horizontal">
-							<div class="form-group">
-								<label for="inputUserName" class="control-label col-sm-2"> Username</label>
-								<div class="col-sm-3">
-								<input  class="form-control" placeholder="Login Username" type="text" id="inputUserName"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputUserName" class="control-label col-sm-2"> Password</label>
-								<div class="col-sm-3">
-								<input  class="form-control" placeholder="Login Username" type="password" id="inputpassword"/>
-								</div>
-							</div>
-							<div class="form-group">
-							<div class="col-sm-3 col-sm-offset-2">
-							<button type="submit" class="btn btn-default">Login</button>
-							</div>
-							</div>
-						</form>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-					<br/>
-						<form class="form-inline">
-							<div class="form-group">
-								<label for="inputUserName"> Username</label>
-								<input  class="form-control" placeholder="Login Username" type="text" id="inputUserName"/>
-							
-							</div>
-							<div class="form-group">
-								<label for="inputUserName"> Password</label>
-								<input  class="form-control" placeholder="Login Username" type="password" id="inputpassword"/>
-							
-							</div>
-							<button type="submit" class="btn btn-default">Login</button>
-						</form>
-					</div>
-				
-				</div>
-				
-				<div class="row">
-					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<br/>
-						<form>
-							<div class="form-group">
-								<label for="inputUserName"> Username</label>
-								<input  class="form-control" placeholder="Login Username" type="text" id="inputUserName"/>
-							
-							</div>
-							<div class="form-group">
-								<label for="inputUserName"> Password</label>
-								<input  class="form-control" placeholder="Login Username" type="password" id="inputpassword"/>
-							</div>
-							<div class="form-group">
-								<label for="inputUserName"> Email</label>
-								<input  class="form-control" placeholder="Email Address" type="email" id="inputemail"/>
-							</div>
-							<button type="submit" class="btn btn-default">Login</button>
-						</form>
-						
-					</div>
-				</div>
-				
-				
-					<div class="row">
-						<div class="col-xs-12">
-						<br />
-						<div class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown">
-							Education <span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">School</a></li>
-							<li><a href="#">College</a></li>
-							<li><a href="#">University</a></li>
-						</ul>
-						</div>
-						</div>
-						
-						<div class="col-xs-12"> 
-						<br />
-						<div class="dropdown">
-						<button class=" btn btn-primary dropdown-toggle" data-toggle="dropdown">
-							Education <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="dropdown-header"><strong>Institute</strong></li>
-							<li><a href="#">School</a></li>
-							<li><a href="#">College</a></li>
-							<li class="disabled"><a href="#">University</a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header"><strong>Institute 1</strong></li>
-							<li><a href="#">School 1</a></li>
-							<li><a href="#">College 1</a></li>
-							<li><a href="#">University 1</a></li>
-						</ul>
-						</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-						
-						</div>
-					</div>
-					
-					
-					
-					<div class="row">
-										<div class ="col-lg-6">
-										<p class="text-justify">
-										Remember it’s the same personal statement for all the courses you apply to, 
-										so avoid mentioning unis and colleges by name. Most students choose similar subjects, 
-										but if you’ve chosen a variety, just write about common themes – like problem solving or creativity.
-										If you've got a questions about writing your personal statement, don't worry you're not alone. Check out our blogs: 
-										</p>
-										</div>
-										<div class ="col-lg-3">
-										<div class="list-group">
-										<a href="http://hp.co.uk" class="list-group-item list-group-item-danger">HP</a>
-										<a href="http://ebay.co.uk" class="list-group-item list-group-item-success">Ebay</a>
-										<a href="http://argos.co.uk" class="list-group-item list-group-item-danger">Argos</a>
-										<a href="http://amazon.co.uk" class="list-group-item list-group-item-info">Amazon</a>
-										<a href="http://dell.co.uk" class="list-group-item disabled">Dell disabled</a>
-										<a href="http://microsoft.co.uk" class="list-group-item list-group-item-warning">Microsoft</a>
-										<a href="http://dell.co.uk" class="list-group-item list-group-item-warning">Dell</a>
-										</div>
-										</div>
-										
-										
-										<div class ="col-lg-3">
-											<ul class="list-group">
-												<li class="list-group-item list-group-item-danger">HP</li>
-												<li class="list-group-item list-group-item-success">Ebay</li>
-												<li class="list-group-item list-group-item-danger">Argos</li>
-												<li class="list-group-item list-group-item-info">Amazon</li>
-												<li class="list-group-item disabled">Dell disabled</li>
-												<li class="list-group-item list-group-item-warning">Microsoft</li>
-												<li class="list-group-item list-group-item-warning">Dell</li>
-											</ul>
-										</div>
-										
-										<div class ="col-lg-6">
-											<table class=" table table-bordered table-hover table-responsive">
-												<thead>
-												<tr>
-												<th>ID</th>
-												<th>Name</th>
-												<th>Email</th>
-												<th>Mobile</th>
-												</tr>
-												</thead>
-												
-												<tbody>
-												<tr>
-												<td>gazi321</td>
-												<td>Jahid hossan</td>
-												<td>jahid@yahoo.com</td>
-												<td>075154</td>
-												</tr>
-												<tr>
-												<td>salman321</td>
-												<td>salman</td>
-												<td>salaman@yahoo.com</td>
-												<td>0751543</td>
-												</tr>
-												<tr>
-												<td>yousuf321</td>
-												<td>yousuf</td>
-												<td>yousuf@yahoo.com</td>
-												<td>0751543</td>
-												</tr>
-												<tbody>
-											</table>
-											
-											
-											
-											
-											
-										</div>
-										
-										
-										<div class ="col-lg-3">
-										<div class="list-group">
-										<a href="http://hp.co.uk" class="list-group-item list-group-item-danger">
-										<h4 class="list-group-item-heading">HP</h4>
-										<p class= list-group-item-text>its a leading company</p>
-										
-										</a>
-										<a href="http://ebay.co.uk" class="list-group-item list-group-item-success">
-										<h4 class="list-group-item-heading">Ebay</h4>
-										<p class= list-group-item-text>its a leading company</p>
-										</a>
-										<a href="http://argos.co.uk" class="list-group-item list-group-item-danger">
-										<h4 class="list-group-item-heading">Argos</h4>
-										<p class= list-group-item-text>its a leading company</p>
-										</a>
-										<a href="http://amazon.co.uk" class="list-group-item list-group-item-info">
-										<h4 class="list-group-item-heading">Amazon</h4>
-										<p class= list-group-item-text>its a leading company</p>
-										</a>
-										<a href="http://dell.co.uk" class="list-group-item disabled">Dell disabled</a>
-										<a href="http://microsoft.co.uk" class="list-group-item list-group-item-warning">
-										<h4 class="list-group-item-heading">microsoft</h4>
-										<p class= list-group-item-text>its a leading company</p>
-										</a>
-										<a href="http://dell.co.uk" class="list-group-item list-group-item-warning">
-										<h4 class="list-group-item-heading">Dell</h4>
-										<p class= list-group-item-text>its a leading company</p>
-										</a>
-										</div>
-										
-										</div>
-					</div>
-					<div class="row">
-					<div class="col-lg-12">
-						<button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button>
-						<button class="btn btn-danger btn-md"><span class="glyphicon glyphicon-search"></span> Search</button>
-						<button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-search"></span> Search</button>
-						<button class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Search</button>
-						<!-- to get all the glyphicons class
-							http://getbootstrap.com/components/#glyphicons						-->
-					</div>
-					</div>
-					
-					<div class="row">
-							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-							<div class= "customDivButton">
-							<div class= "btn-toolbar">
-								<div class="btn-group btn-group-lg">	
-								<button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Search</button>
-								<button class="btn btn-danger"><span class="glyphicon glyphicon-search"></span> Search</button>
-								</div>
-								<div class="btn-group-vertical">
-								<button class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</button>
-								<button class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Search</button>
-								<button class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
-								</div>
-								<div class="btn-group">
-								<button class="btn btn-warning"><span class="glyphicon glyphicon-search"></span> Search</button>
-								<button class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Search</button>
-								</div>
-							</div>	
-							</div>
-							</div>
-					</div>
-					
-					<div class="row">
-							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<div class="customDivButton">
-								<button class="btn btn-primary btn-block"><span class="glyphicon glyphicon-search"></span> Search</button>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<div class="customDivButton">
-								<button class="btn btn-danger btn-block"><span class="glyphicon glyphicon-search"></span> Search</button>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<div class="customDivButton">
-								<button class="btn btn-info btn-block"><span class="glyphicon glyphicon-search"></span> Search</button>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<div class="customDivButton">
-								<button class="btn btn-success btn-block"><span class="glyphicon glyphicon-search"></span> Search</button>
-								</div>
-							</div>
-					</div>
-					
-					<div class="row">
-							<div class ="col-lg-12">
-								<h3>First side bar</h3>	
-							</div>
-							
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/waterfall.jpg" class="thumbnail">
-									<p>Waterfall</p>
-									<img src="images/waterfall.jpg" class="img-responsive"/>
-								</a>
-							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/bamboo.png" class="thumbnail">
-									<p>Bamboo</p>
-									<img src="images/bamboo.png" class="img-responsive"/>
-								</a>
-							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/landscape.jpg" class="thumbnail">
-									<p>Landscape</p>
-									<img src="images/landscape.jpg" class="img-responsive"/>
-								</a>
-							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/waterfall.jpg" class="thumbnail">
-									<p>Waterfall</p>
-									<img src="images/waterfall.jpg" class="img-responsive"/>
-								</a>
-							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/bamboo.png" class="thumbnail">
-									<p>Bamboo</p>
-									<img src="images/bamboo.png" class="img-responsive"/>
-								</a>
-							</div>
-							<div class ="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/landscape.jpg" class="thumbnail">
-									<p>Landscape</p>
-									<img src="images/landscape.jpg" class="img-responsive"/>
-								</a>
-							</div>
-								
-					</div>
-					<div class="row">
-							<div class ="col-md-4 col-lg-3 col-sm-6 col-xs-12">
-								<div class="customDiv">All screen</div>
-								
-							</div>
-							<div class ="col-md-4 col-lg-3 col-sm-6 col-xs-12 hidden-xs">
-								<div class="customDiv">large medium small</div>
-							</div>
-							<div class ="col-md-4 col-lg-3 col-sm-6 col-xs-12 visible-md visible-lg">
-								<div class="customDiv">Third side bar</div>
-							</div>
-							<div class ="col-md-4 col-lg-3 col-sm-6 col-xs-12 visible-lg">
-								<div class="customDiv">Fourth side bar</div>
-							</div>
-					</div>	
-					<div class="row">
-								<div class ="col-md-6">
-									<div class="row">
-										<div class ="col-md-3"><div class="mainContent">Nested bar</div></div>
-										<div class ="col-md-3 col-md-offset-6"><div class="mainContent">Nested bar</div></div>
-									</div>	
-								</div>	
-						
-								<div class ="col-md-3 col-md-offset-3">
-									<div class="row">
-										<div class ="col-md-12"><div class="sidebarContent">Nested bar</div></div>
-									</div>
-									<div class="row">
-										<div class ="col-md-12"><div class="sidebarContent">Nested bar</div></div>
-									</div>
-								</div>	
-					</div>	
-					<div class="row">
-										<div class ="col-xs-12"><p class="text-justify"> </p></div>
-										<div class ="col-md-3 col-md-offset-6"><div class="mainContent">Nested bar</div></div>
-					</div>
-					
-	  </div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 			<script src="bootstrap/js/bootstrap.min.js"></script>
+			<script type="text/javascript">	
+				$(document).ready(
+				function (){
+				$('#imageCarousel').carousel();
+				});
+				
+				$(document).ready(function (){
+				var s=$("#sticker");
+				var pos = s.position();
+				$(window).scroll(function(){
+					var windowpos =$(window).scrollTop();
+					s.html("Distance from top: " + pos.top+ "<br /> Scroll position: " + windowpos);
+					if(windows>=pos.top){
+					s.addClass("stick");
+					}else {
+					s.removeClass("stick");
+					}
+				
+					});
+				<!-- $('#imageCarousel').carousel(); -->
+				});
+			</script>
 	  </body>
 </html>
