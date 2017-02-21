@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			function myMap() {
+			  var myCenter = new google.maps.LatLng(52.630718665999495,-1.1466979731631);
+			  var mapCanvas = document.getElementById("google_maps");
+			  var mapOptions = {center: myCenter, zoom: 12};
+			  var google_maps = new google.maps.Map(mapCanvas, mapOptions);
+			  var marker = new google.maps.Marker({position:myCenter});
+			  marker.setMap(google_maps);
+
+			  // Zoom to 9 when clicking on marker
+			  google.maps.event.addListener(marker,'click',function() {
+				google_maps.setZoom(16);
+				google_maps.setCenter(marker.getPosition());
+			  });
+			}
+		</script>
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Bootstrap 101 Template</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/CustomStyleq.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="css/frontpagemediaqueries.css" rel="stylesheet">
+		<link rel="stylesheet" media="screen" href="css/form_styles.css" >
+	</head>
+	<body class="img-responsive body-backgroundImage" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-inverse navbar-fixed-top">
+						<div class="container">
+							<div class="navbar-header">
+								<h1><a class="navbar-brand animation" href="index.html">Bombay Bites</a></h1>
+								<button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar-collapse collapse navbar-right" id="mainNavbar">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="photogallery.html">Photo Gallery</a></li>
+									<li><a href="menu.html">Menu</a></li>
+									<li><a href="about_us.html">About Us</a></li>
+									<li class="active"><a href="contact_us.html">Contact Us</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>	
+			</div>
+			
+			<section class="row">
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">	
+					<form class="contact_form" action="" method="post" name="contact_form">
+						<ul>
+							<li>
+								 <h2>Contact Us</h2>
+								 <span class="required_notification">* Denotes Required Field</span>
+							</li>
+							<li>
+								<label for="name">Name:</label>
+								<input type="text" name="name" required placeholder="Enter your name"/>
+							</li>
+							<li>
+								<label for="email">Email:</label>
+								<input type="email" name="email" required placeholder="name@something.com"/>
+								<span class="form_hint">Proper format "name@something.com"</span>
+							</li>
+							<li>
+								<label for="website">Phone:</label>
+								<input type="text" name="website" required placeholder="Enter your phone number"/>
+								<span class="form_hint">Proper format "07"</span>
+							</li>
+							<li>
+								<label for="message">Details:</label>
+								<textarea name="message" cols="20" rows="4" required ></textarea>
+							</li>
+							<li>
+								<button class="submit" type="submit">Submit Form</button>
+							</li>
+						</ul>
+					</form>
+				</div>
+				
+				<div id= "google_maps" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-offset-1"></div>
+				
+				
+			</section>
+			
+			
+			<div class="row">
+				</br></br>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				
+					<p id="frontpagepara" class="FrontPageFont">
+						<ul class="myList">
+							<li><h4>Bombay Bites Takeaway</h4></li>
+							<li>79 Braunstone Gate,</li>
+							<li>Leicester LE3 5LH</li>
+							<li>Tel: 1162555531</li></br></br>
+						</ul>		
+					</p>
+				
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<p id="frontpagepara" class="FrontPageFont">
+						<ul class="myList">
+							<li><h4>Opening Hours</h4></li>
+							<li>MON. 17:30 - 00:00</li>
+							<li>TUE. 11:00 - 00:30</li>
+							<li>WED. 11:00 - 00:30</li>
+							<li>THU. 11:00 - 00:30</li>
+							<li>FRI. 11:00 - 00:30</li>
+							<li>SAT. 11:00 - 00:30</li>
+							<li>SUN. 17:30 - 00:00</li>
+						</ul>		
+					</p>
+				</div>
+			</div>
+			
+			<!-- <section class=row>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Email:</label>
+							<div class="col-sm-10">
+							  <input type="email" class="form-control" id="email" placeholder="Enter email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Password:</label>
+							<div class="col-sm-10"> 
+							  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="description">Details:</label>
+							<div class="col-sm-10"> 
+							  <textarea class="form-control" rows="5" id="description" placeholder="Enter Full details"></textarea>
+							</div>
+						</div>
+						
+						<div class="form-group"> 
+							<div class="col-sm-offset-2 col-sm-10">
+							  <button type="submit" class="btn btn-default">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section> -->
+			
+		</div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-r3WgQzd1oeN4r1FF3aiEvvipay7evdM&callback=myMap"></script>
+	</body>
+</html>

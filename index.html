@@ -11,6 +11,7 @@
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/CustomStyle.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="css/frontpagemediaqueries.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -18,15 +19,15 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	  </head>
-		<body class="full" >
+		<body class="img-responsive body-backgroundImage" >
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-md-12">
 						<nav class="navbar navbar-inverse navbar-fixed-top">
 							<div class="container">
 								<div class="navbar-header">
 									
-									  <h1><a class="navbar-brand animation" href="#">Bombay Bites</a></h1>
+									  <h1><a class="navbar-brand animation" href="index.html">Bombay Bites</a></h1>
 									<!-- <div class="navbar-header"></div> -->
 									<!-- <a class="navbar-brand" href="#"><img alt="Bombay" class="logo" src="images/home-logo.jpg"></a>
 										<a class="navbar-brand" href="#"><h1>Bombay Bites</h1></a> -->
@@ -39,11 +40,12 @@
 								</div>
 								<div class="navbar-collapse collapse navbar-right" id="mainNavbar">
 									<ul class="nav navbar-nav">
-										<li class="active"><a href="#">Home</a></li>
+										<li class="active"><a href="index.html">Home</a></li>
 										<li><a href="photogallery.html">Photo Gallery</a></li>
-										<li><a href="#">Contact</a></li>
-										<li><a href="#">About</a></li>
-										<li><a href="#">Product</a></li>
+										<li><a href="menu.html">Menu</a></li>
+										<li><a href="about_us.html">About Us</a></li>
+										<li><a href="contact_us.html">Contact Us</a></li>
+										
 									</ul>
 								</div>
 							</div>
@@ -52,24 +54,16 @@
 				</div>
 				<div class="row">
 					
-					<div class =" col-xs-6 col-sm-4 col-md-4 col-lg-4">
-						<p class="white-large-font"> <span>Bombay Bites</span> offers something different to the traditional Indian takeaway. 
+					<div class =" col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<p id="frontpagepara" class="FrontPageFont">Welcome to Bombay Bites.
+						Bombay Bites offers something different to the traditional Indian takeaway. 
 						We've taken the great British love affair for Indian food and created a simple, quick and affordable way to enjoy it. 
 						Our menu allows you to order the classic favourites but most of our customers go for one of our delicious layered Bombay boxes. 
 						A self-contained meal conveniently eaten straight from the box. To make ordering super easy we've created a list of our 'Most Popular Boxes'. 
 						9 of the best and most frequently ordered combinations. </p>
-						<!-- <div class="panel panel-danger">
-						    <div class="panel-heading">
-						        <h3 class="panel-title">What is bootstrap</h3>
-						    </div>
-						    <div class="panel-body">
-						        Bootstrap is a free, open-source and is the most popular HTML, CSS, and JavaScript framework developed by twitter for creating responsive web applications. It includes HTML and CSS based design templates for common user interface components like Buttons, Dropdowns, Typography, Tabs, Forms, Tables, Navigations, Alerts, Modals, Accordion, Carousel etc. along with optional JavaScript extensions. Bootstrap framework is based on open standards - HTML, CSS and JavaScript. This means bootstrap can be used with any server side technology and any platform. You can use it with any web application built with any server side technology like ASP.NET, JAVA, PHP etc.
-						    </div>
-						    <div class="panel-footer panel-danger">
-						        PragimTech
-						    </div>
-						</div> -->
+					
 					</div>
+					
 					
 				</div>
 				
@@ -81,12 +75,7 @@
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 			<script src="bootstrap/js/bootstrap.min.js"></script>
-			<script type="text/javascript">	
-				$(document).ready(
-				function (){
-				$('#imageCarousel').carousel();
-				});
-				
+			<script type="text/javascript">
 				$(document).ready(function (){
 				var s=$("#sticker");
 				var pos = s.position();
@@ -101,6 +90,24 @@
 				
 					});
 				<!-- $('#imageCarousel').carousel(); -->
+				
+				var $window = $(window);
+				var $pane = $('#frontpagepara').text();
+
+				function checkWidth() {
+					var windowsize = $window.width();
+					if (windowsize < 320) {
+						//if the window is less than 481px wide then turn on jScrollPane..
+						<!-- $pane.jScrollPane({ -->
+						   <!-- scrollbarWidth:15,  -->
+						   <!-- scrollbarMargin:52 -->
+						<!-- }); -->
+						$('#frontpagepara').text("");
+						$('#frontpagepara').text("Bombay Bites offers something different to the traditional Indian takeaway. 
+						We've taken the great British love affair for Indian food and created a simple, quick and affordable way to enjoy it. ");
+					}
+				}
+				checkWidth();
 				});
 			</script>
 	  </body>

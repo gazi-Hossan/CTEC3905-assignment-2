@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Bootstrap 101 Template</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/CustomStyle.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	  </head>
+	  <div id="fedbackground">
+		<body class="img-responsive">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav class="navbar navbar-inverse navbar-fixed-top">
+							<div class="container">
+								<div class="navbar-header">
+									<div class="navbar-header">
+									  <h1><a class="navbar-brand animation" href="#">Bombay Bites</a></h1>
+									</div>
+									<!-- <a class="navbar-brand" href="#"><img alt="Bombay" class="logo" src="images/home-logo.jpg"></a>
+										<a class="navbar-brand" href="#"><h1>Bombay Bites</h1></a> -->
+									<button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<div class="navbar-collapse collapse navbar-right" id="mainNavbar">
+									<ul class="nav navbar-nav">
+										<li><a href="index.html">Home</a></li>
+										<li class="active"><a href="photogallery.html">Photo Gallery</a></li>
+										<li><a href="menu.html">Menu</a></li>
+										<li><a href="about_us.html">About Us</a></li>
+										<li><a href="contact_us.html">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>	
+				</div>
+				<div class="row">
+					<br><br>
+					<div class ="col-sm-6 col-md-6 col-lg-4">
+						<div class="panel panel-danger">
+						    <div class="panel-heading">
+						        <h3 class="panel-title">What is bootstrap</h3>
+						    </div>
+						    <div class="panel-body">
+						        Bootstrap is a free, open-source and is the most popular HTML, CSS, and JavaScript framework developed by twitter for creating responsive web applications. It includes HTML and CSS based design templates for common user interface components like Buttons, Dropdowns, Typography, Tabs, Forms, Tables, Navigations, Alerts, Modals, Accordion, Carousel etc. along with optional JavaScript extensions. Bootstrap framework is based on open standards - HTML, CSS and JavaScript. This means bootstrap can be used with any server side technology and any platform. You can use it with any web application built with any server side technology like ASP.NET, JAVA, PHP etc.
+						    </div>
+						    <div class="panel-footer panel-danger">
+						        PragimTech
+						    </div>
+						</div>
+					</div>
+					<div class ="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1">
+						<div id="imageCarousel" class="carousel slide" data-wrap="true" data-pause="true" data-interval="2000">
+							<ol class="carousel-indicators">
+								<li data-target="imageCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="imageCarousel" data-slide-to="1"></li>
+								<li data-target="imageCarousel" data-slide-to="2"></li>
+								<li data-target="imageCarousel" data-slide-to="3"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="images/waterfall.jpg" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Waterfall</h3>
+										<p> Beautiful waterfall</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="images/bamboo.png" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Green Bamboo Forest</h3>
+										<p>Bamboo forest</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="images/landscape.jpg" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Landscape</h3>
+										<p> Eye-catching view</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="images/waterfall.jpg" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Waterfall</h3>
+										<p> beautiful waterfall</p>
+									</div>
+								</div>
+							</div>
+							<a href="#imageCarousel" class="carousel-control right" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+							<a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- image gallery -->
+				<div class="row">
+					<div class="container">
+						<div class="panel panel-danger">
+	           				 <div class="panel-heading">
+				                <button class="btn btn-danger" data-target="#imageGallery1" data-toggle="collapse">Image Gallery</button>
+	            			 </div>
+								<!-- nested gallery -->
+				            <div class="panel-body collapse" id="imageGallery1">
+								<!-- nested first gallery -->
+								<div class="panel panel-danger">
+	           				 <div class="panel-heading">
+				                <button class="btn btn-danger" data-target="#imageGallery2" data-toggle="collapse">Starter</button>
+	            			</div>
+				            <div class="panel-body collapse" id="imageGallery2">
+				                <div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/waterfall.jpg" class="thumbnail">
+										<p>Waterfall</p>
+										<img src="images/waterfall.jpg" class="img-responsive"/>
+									</a>
+								</div>
+								<div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/bamboo.png" class="thumbnail">
+										<p>Bamboo</p>
+										<img src="images/bamboo.png" class="img-responsive"/>
+									</a>
+								</div>
+								<div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/landscape.jpg" class="thumbnail">
+										<p>Landscape</p>
+										<img src="images/landscape.jpg" class="img-responsive"/>
+									</a>
+								</div>
+								<div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/waterfall.jpg" class="thumbnail">
+										<p>Waterfall</p>
+										<img src="images/waterfall.jpg" class="img-responsive"/>
+									</a>
+								</div>
+				            </div>
+			        	</div><!-- end of first nested gallery -->
+								<!-- start of second nested gallery -->
+								<div class="panel panel-danger">
+	           				 <div class="panel-heading">
+				                <button class="btn btn-danger" data-target="#imageGallery3" data-toggle="collapse">Main Course</button>
+	            			</div>
+				            <div class="panel-body collapse" id="imageGallery3">
+				                <div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/waterfall.jpg" class="thumbnail">
+										<p>Waterfall</p>
+										<img src="images/waterfall.jpg" class="img-responsive imageGetBigger"/>
+									</a>
+								</div>
+								<div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/bamboo.png" class="thumbnail">
+										<p>Bamboo</p>
+										<img src="images/bamboo.png" class="img-responsive"/>
+									</a>
+								</div>
+								<div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/landscape.jpg" class="thumbnail">
+										<p>Landscape</p>
+										<img src="images/landscape.jpg" class="img-responsive"/>
+									</a>
+								</div>
+								<div class ="col-sm-6 col-md-4 col-lg-3">
+									<a href="images/landscape.jpg" class="thumbnail">
+										<p>Landscape</p>
+										<img src="images/landscape.jpg" class="img-responsive"/>
+									</a>
+								</div>
+								<!-- <div class ="col-sm-6 col-md-4 col-lg-3"> -->
+									<!-- <a href="images/waterfall.jpg" class="thumbnail"> -->
+										<!-- <p>Waterfall</p> -->
+										<!-- <img src="images/waterfall.jpg" class="img-responsive"/> -->
+									<!-- </a> -->
+								<!-- </div> -->
+				            </div>
+			        	</div>
+							</div>
+			        	</div>        
+			       	</div><!-- end of container--!>
+		    	</div><!-- end of image gallery -->
+		
+				
+				<div class="row">
+				
+<div class ="col-lg-3">
+						<div class="list-group">
+							<a href="http://hp.co.uk" class="list-group-item list-group-item-danger">HP</a>
+							<a href="http://ebay.co.uk" class="list-group-item list-group-item-success">Ebay</a>
+							<a href="http://argos.co.uk" class="list-group-item list-group-item-danger">Argos</a>
+							<a href="http://amazon.co.uk" class="list-group-item list-group-item-info">Amazon</a>
+							<a href="http://dell.co.uk" class="list-group-item disabled">Dell disabled</a>
+							<a href="http://microsoft.co.uk" class="list-group-item list-group-item-warning">Microsoft</a>
+							<a href="http://dell.co.uk" class="list-group-item list-group-item-warning">Dell</a>
+						</div>
+					</div>
+					<div class ="col-lg-3">
+						<ul class="list-group">
+							<li class="list-group-item list-group-item-danger">HP</li>
+							<li class="list-group-item list-group-item-success">Ebay</li>
+							<li class="list-group-item list-group-item-danger">Argos</li>
+							<li class="list-group-item list-group-item-info">Amazon</li>
+							<li class="list-group-item disabled">Dell disabled</li>
+							<li class="list-group-item list-group-item-warning">Microsoft</li>
+							<li class="list-group-item list-group-item-warning">Dell</li>
+						</ul>
+					</div>
+					
+					<div class ="col-lg-6">
+						<table class=" table table-bordered table-hover table-responsive">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Email</th>
+									<th>Mobile</th>
+								</tr>
+							</thead>		
+							<tbody>
+								<tr>
+									<td>gazi321</td>
+									<td>Jahid hossan</td>
+									<td>jahid@yahoo.com</td>
+									<td>075154</td>
+								</tr>
+								<tr>
+									<td>salman321</td>
+									<td>salman</td>
+									<td>salaman@yahoo.com</td>
+									<td>0751543</td>
+								</tr>
+								<tr>
+									<td>yousuf321</td>
+									<td>yousuf</td>
+									<td>yousuf@yahoo.com</td>
+									<td>0751543</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class ="col-sm-6 col-md-6 col-lg-4">
+						<div class="panel panel-danger">
+						    <div class="panel-heading">
+						        <h3 class="panel-title">What is bootstrap</h3>
+						    </div>
+						    <div class="panel-body">
+						        Welcome to Bombay Bites. An exciting, simple, and affordable new way to enjoy freshly 
+						prepared Indian food at the highest quality. The concept was first launched in 2007 in Leicester city centre.Having very quickly 
+						established a great reputation with the locals and through increased demand we're proud to have successfully launched 2 new branches
+						on Evington Road and Braunstone Gate. An award-winning business we were recognised as the winner of the Leicester mercury readers’ 
+						choice award and finalist in the British take away awards 2015 and 2016.Thank you for kindly supporting us on what we hope will be a 
+						journey that sees Bombay Bites became a serious contender in the fast food industry. Our aim is to attract new customers by offering 
+						exceptional food and service to all our customers.</div>
+						    <div class="panel-footer panel-danger">
+						        PragimTech
+						    </div>
+						</div>
+					</div>
+						<div class ="col-lg-3">
+						<div class="list-group">
+							<a href="http://hp.co.uk" class="list-group-item list-group-item-danger">
+							<h4 class="list-group-item-heading">HP</h4>
+							<p class= list-group-item-text>its a leading company</p>
+							</a>
+							<a href="http://ebay.co.uk" class="list-group-item list-group-item-success">
+							<h4 class="list-group-item-heading">Ebay</h4>
+							<p class= list-group-item-text>its a leading company</p>
+							</a>
+							<a href="http://argos.co.uk" class="list-group-item list-group-item-danger">
+							<h4 class="list-group-item-heading">Argos</h4>
+							<p class= list-group-item-text>its a leading company</p>
+							</a>
+							<a href="http://amazon.co.uk" class="list-group-item list-group-item-info">
+							<h4 class="list-group-item-heading">Amazon</h4>
+							<p class= list-group-item-text>its a leading company</p>
+							</a>
+							<a href="http://dell.co.uk" class="list-group-item disabled">Dell disabled</a>
+							<a href="http://microsoft.co.uk" class="list-group-item list-group-item-warning">
+							<h4 class="list-group-item-heading">microsoft</h4>
+							<p class= list-group-item-text>its a leading company</p>
+							</a>
+							<a href="http://dell.co.uk" class="list-group-item list-group-item-warning">
+							<h4 class="list-group-item-heading">Dell</h4>
+							<p class= list-group-item-text>its a leading company</p>
+							</a>
+						</div>
+</div>
+					<div class ="col-lg-6">
+						<p class="text-justify">
+						Remember it’s the same personal statement for all the courses you apply to, 
+						so avoid mentioning unis and colleges by name. Most students choose similar subjects, 
+						but if you’ve chosen a variety, just write about common themes – like problem solving or creativity.
+						If you've got a questions about writing your personal statement, don't worry you're not alone. Check out our blogs: 
+						</p>
+					</div>
+					
+										
+					
+				
+				</div>
+				
+				
+				
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+			<script type="text/javascript">	
+				$(document).ready(
+				function (){
+				$('#imageCarousel').carousel();
+				});
+				
+				$(document).ready(function (){
+				var s=$("#sticker");
+				var pos = s.position();
+				$(window).scroll(function(){
+					var windowpos =$(window).scrollTop();
+					s.html("Distance from top: " + pos.top+ "<br /> Scroll position: " + windowpos);
+					if(windows>=pos.top){
+					s.addClass("stick");
+					}else {
+					s.removeClass("stick");
+					}
+				
+					});
+				<!-- $('#imageCarousel').carousel(); -->
+				});
+			</script>
+	  </body>
+	  </div>
+</html>

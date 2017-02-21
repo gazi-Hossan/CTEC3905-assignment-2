@@ -1,0 +1,46 @@
+<div class ="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1">
+						<div id="imageCarousel" class="carousel slide" data-wrap="true" data-pause="true" data-interval="9000" data-ride="cakrousNel">
+							<ol class="carousel-indicators">
+								<li data-target="imageCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="imageCarousel" data-slide-to="1"></li>
+								<li data-target="imageCarousel" data-slide-to="2"></li>
+								<li data-target="imageCarousel" data-slide-to="3"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="images/waterfall.jpg" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Waterfall</h3>
+										<p> Beautiful waterfall</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="images/bamboo.png" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Green Bamboo Forest</h3>
+										<p>Bamboo forest</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="images/landscape.jpg" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Landscape</h3>
+										<p> Eye-catching view</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="images/waterfall.jpg" class="img-responsive"/>
+									<div class="carousel-caption">
+										<h3>Waterfall</h3>
+										<p> beautiful waterfall</p>
+									</div>
+								</div>
+							</div>
+							<a href="#imageCarousel" class="carousel-control right" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+							<a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+						</div>
+					</div>

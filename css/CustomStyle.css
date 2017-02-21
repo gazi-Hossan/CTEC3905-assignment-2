@@ -1,15 +1,34 @@
-/* it will add background image on every pages */
-body
-{
+body {
+	
+/* leave some space for the fixed navigation bar	 */
 	padding-top:50px;
-	lbackground-color: #222; 
-	font-family: 'Oswald', sans-serif;
-	background: url('../images/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+	
+  /* font style for the whole website */
+font-family: 'Oswald', sans-serif;
+	color: white;
+	
+  /* Location of the image */
+/*  background: url('../images/background-mobile.jpg'); */
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
 }
+
 
 /* it changes navigation font's color and background */
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -21,22 +40,10 @@ body
     color: red;
 }
 
-.white-large-font
-{
-	color:white;
-	font-size: X-large;
-	margin-top: 70px;
-	line-height: 125%;
-	text-align: justify;
-	text-shadow: 2px 2px red;/* this line for text shadow */
-}
-sspan
-{
-	letter-spacing: 10px;
-	background:red;
-}
+
+
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .navbar, .navbar-inverse .navbar-brand {
@@ -44,42 +51,26 @@ sspan
 	
 }
 
-/* just to add on singular page on the body */
-.full {
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-
-.container
-{
-	lbackground-color:#a94442;
-	/* background-color: #4d4d4d; */
-}	
-
 .navbar-fixed-top{
 	border-width:0 0 3px;
-	border-color:#222;	
+	border-color:#222;
+	height:50px;	
 }
-
+.panel{
+	
+	margin-top:20px;
+	background-color:wtransparent;
+	border:none;
+}
 .animation 
-{
-	font-size:38px;
-    width: 250px;
-	border-radius:0px;
-    height: 35px;
-	color:red;
-    /* background: #a94442; */
-	 background: #222;
+{	color: blue;
+	font-size:25px;
     position: relative;
     /* -webkit-animation: mymove 20s infinite; /* Safari 4.0 - 8.0 */ */
-	-webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
-	-webkit-animation-iteration-count: 3;
-    animation: mymove 3s;
-	animation-iteration-count: 3;
+	-webkit-animation: mymove 6s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: 6;
+    animation: mymove 6s;
+	animation-iteration-count: 6;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -92,94 +83,72 @@ sspan
     from {left: 0px;}
     to {left: 200px;}
 }
-/* 
-.navbar-custome
+.FrontPageFont
 {
-	color: yellow;
-    background-color: #8B0000;
-
+	color:white;
+	font-size: X-large;
+	margin-top: 70px;
+	line-height: 125%;
+	text-align: justify;
+	text-shadow: 2px 2px red;/* this line for text shadow */
 }
-.coloarMe
-{
-	color: #ffff00;
-}
-.nav.navbar-nav ul li a {
-   color: yellow;
- }
-
-.nav.navbar-nav a:hover {
- color: #8B0000;
-}
-.stick{
-	position:fixed;
-	top:0px;
-	
-}
-.customDiv
-{
-	margin:3px;
-	min-height:100px;
-	background-color:silver;
-	text-align:center;
-	font-size:large;
-}
-.customDivButton{
-	padding:10px;
+.body-backgroundImage{
+	background-image:url('../images/background-mobile.jpg');
 	width:100%;
-	
-	
-}
-.sidebarContent
-{
-	margin-bottom:10px;
-	min-height:150px;
-	background-color:silver;
-	text-align:center;
-	font-size:large;
-}
-.mainContent
-{
-	margin-bottom:10px;
-	min-height:300px;
-	background-color:silver;
-	text-align:center;
-	font-size:large;
-} 
-.logo
-{
-	height: 40px;
- 	margin-top: -10px;
-	margin-right: 50px;
+	height: auto;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
-.imageGetBigger
-{
+#fedbackground{
+	background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/photogaleery.jpg');
+	width:100%;
+	height: auto;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 	
-    -webkit-transition: width 1s, height 1s; For Safari 3.1 to 6.0
-    transition: width 1s, height 1s; }
-.imageGetBigger:hover 
-{
-    width: 500px;
-    height: 500px;
-
+	 /* background: rgba(0,0,0,0.9); */
+	  /* opacity: 0.5; */
+}
+.menu-background{
+	background:linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url('../images/photo.jpg');
+	width:100%;
+	height: auto;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	
 	
 }
-.background-imagews
-{
+.navbar-toggle{
+		margin-top:-14px;
+}
+
+.about_us_background{
+	background-image:url('../images/spice2.jpg');
+	width:100%;
+	height: auto;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 	
-	background:'images/waterfall.jpg';
-    background-size: 1440px 800px;
-    background-repeat:no-repeat;
 }
 
-div.panel-body.backgrounpd-images{
-    color:#fff;
-    text-align:center;
-    background:url('../images/background.jpg');
-    background-size:cover;
-    background-position:center;
-    padding-top:100px;
-    padding-bottom:100px;
-}
 
- */
+/* #fedbackground::before { */
+     /* content: '';  */
+      /* display: block; */
+     /* position:absolute; */
+    /* background-color: #000; */
+    /* opacity: 0.5; */
+     /* width: 100%; */
+     /* height: 100%; */
+/* } */
