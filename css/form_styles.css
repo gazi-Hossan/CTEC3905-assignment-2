@@ -1,9 +1,9 @@
 :-moz-placeholder {
-    color: blue;
+    color: grey;
 }
  
 ::-webkit-input-placeholder {
-    color: blue;
+    color: grey;
 }
 *:focus {outline: none;}
 body {
