@@ -1,0 +1,29 @@
+.fedbackground{
+	background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/photogalleery.jpg');
+	width:100%;
+	height: auto;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	
+	 /* background: rgba(0,0,0,0.9); */
+	  /* opacity: 0.5; */
+}
+ .imageGallery2, .imageGallery3, .imageGallery4{
+	padding-left: 70px;
+	padding-top:0px;
+	padding-bottom:0px;	
+}
+
+.panel.nested_imageGallery{
+		margin-bottom: 0px;
+		margin-top:0px;
+		margin-left:50px;
+		margin-right:50px;
+}
+
+.panel.panel-danger.main_imageGallery{
+	border: 4px solid #d43f3a;
+	margin-top:40px;
+}
