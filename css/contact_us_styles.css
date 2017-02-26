@@ -1,12 +1,12 @@
 .contact-us-fed-backgroundImage{
-	background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../images/contact_us.jpg');
+	background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../images/background/contact_us2.jpg');
 	
 	width:100%;
 	height: auto;
-	background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+	/* background-position: center center; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
     background-color: #464646;
 	padding-top:80px;
 	font: 14px/21px;
@@ -14,7 +14,11 @@
 	font-family:'Oswald', sans-serif;
 }
 
-
+.tomatoes{
+	position:fixed;
+    bottom:-25px;
+    left:-40px;
+}
 
 :-moz-placeholder {
     color: #E3DEC1;
@@ -134,6 +138,7 @@ button.submit:active {
 #google_maps{
 	height:300px;
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
 .myList {
     list-style-type:none;

@@ -4,10 +4,12 @@ body {
 	padding-top:50px;
 	
   /* font style for the whole website */
-	font-family: 'Oswald', sans-serif;
+font-family: 'Oswald', sans-serif;
 	color: red;
 	
-   
+  /* Location of the image */
+/*  background: url('../images/background-mobile.jpg'); */
+  
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   
@@ -25,13 +27,6 @@ body {
   /* Set a background color that will be displayed
      while the background image is loading */
   background-color: #464646;
-}
-
-.body-backgroundImage
-{
-	background-image:url('../images/background-mobile.jpg');
-	width:100%;
-	height: auto;
 }
 
 
@@ -60,6 +55,11 @@ body {
 	border-width:0 0 3px;
 	border-color:#222;
 	height:50px;	
+}
+
+/*mobile menu its common feature*/
+.navbar-toggle{
+		margin-top:-14px;
 }
 
 .animation 
@@ -92,10 +92,19 @@ body {
 	text-align: justify;
 	text-shadow: 2px 2px red;/* this line for text shadow */
 }
-
-.navbar-toggle{
-		margin-top:-14px;
+.body-backgroundImage{
+	background-image:url('../images/background/background-mobile.jpg');
+	width:100%;
+	height: auto;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
+
+
+
 
 .about_us_background{
 	background-image:url('../images/spice2.jpg');
@@ -108,16 +117,111 @@ body {
     background-color: #464646;
 	
 }
+
+/* /* photogallery */ */
+/* .fedbackground{ */
+	/* background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/photogaleery.jpg'); */
+	/* width:100%; */
+	/* height: auto; */
+	/* background-position: center center; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
 	
-	/* #6A9A1F- eta peeth color */
-	/* #D43F3F- meroon color */
-	/* #8A0651- begun color */
-	/* #D11250-meroon type */
-	/* #DB5800- komola color */
-	/* #006899- peste  */
-	/* #008F68-sobuj color */
+	 /* /* background: rgba(0,0,0,0.9); */ */
+	  /* /* opacity: 0.5; */ */
+/* } */
+
+
+ /* .imageGallery2, .imageGallery3, .imageGallery4{ */
+	/* padding-left: 70px; */
+	/* padding-top:0px; */
+	/* padding-bottom:0px;	 */
+/* } */
+
+/* p#success_gallery{ */
+	/* color:green; */
+/* } */
+/* .panel.nested_imageGallery{ */
+		/* margin-bottom: 0px; */
+		/* margin-top:0px; */
+		/* margin-left:50px; */
+		/* margin-right:50px; */
+/* } */
+
+/* button.btn-success, button.btn-warning, button.btn-info{ */
+    
+    /* border-top-right-radius: 66px; */
+/* } */
+/* /* #imageGallery1, #imageGallery2, #imageGallery3, #imageGallery4{ */ */
+		/* /* padding:3px; */ */
 	
+/* /* } */ */
+/* .panel.main_imageGallery{ */
+	/* border: 3px solid; */
+	/* margin-top:40px; */
+/* } */
+
+/* .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th, .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th  */
+/* { */
+   /* /*  border-top: 3px; */ */
+	/* /* border:3px solid #DAA520; */ */
+	/* /* border:3px solid #464646; */ */
+	/* border: none; */
+/* } */
+
+/* hr { */
+    /* margin-top: 2px; */
+    /* margin-bottom: 2px; */
+    /* border: 0; */
+    /* /* border-top: 1px solid #DAA520; */ */
+	/* border-top: 2px solid #ff3333; */
+/* } */
+
+
+/* .th{ */
+	/* font-size: 22px; */
+/* } */
+
+/* .table>thead>tr>th { */
+    /* font-size: 22px; */
+/* }	 */
+
+
+  /* .table>tbody>tr>td>span{ */
+	/* font-size:11px; */
+	/* font-style: italic; */
+	/* color:#ff4d4d;   */
+  /* } */
+/* hr { */
+    /* margin-top: 2px; */
+    /* margin-bottom: 2px; */
+    /* border: 0; */
+    /* border-top: 1px solid #ff3333; */
+/* } */
+/* .menu-background{ */
+	/* /* background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/photo.jpg'); */ */
+	/* width:100%; */
+	/* height: auto; */
+	/* background-position: center center; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+	 /* background-color:rgba(255,0,0,0.5); */
+	/* background:repeating-linear-gradient(90deg,#737373, #737373 5px,#a6a6a6 5px,#a6a6a6 10px);  */
 	
-	
-	
-	
+	/* /* background:repeating-linear-gradient(90deg,#ff9999, #ff9999 10px,#ffcc66 10px,#ffcc66 20px,#ffcccc 20px,#ffcccc 30px);  */ */
+/* } */
+
+/* table { */
+    /* background-color:  rgba(38, 38, 38, 0.8); */
+	/* margin:50px; */
+	 
+/* } */
+
+
+   /* .table {  */
+        /* border: none; */
+        
+		
+    /* } */

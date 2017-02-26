@@ -1,0 +1,123 @@
+body {
+	
+/* leave some space for the fixed navigation bar	 */
+	padding-top:50px;
+	
+  /* font style for the whole website */
+	font-family: 'Oswald', sans-serif;
+	color: red;
+	
+   
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+.body-backgroundImage
+{
+	background-image:url('../images/background-mobile.jpg');
+	width:100%;
+	height: auto;
+}
+
+
+/* it changes navigation font's color and background */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: red;
+    
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: red;
+}
+
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-top: -20px;
+}
+
+.navbar, .navbar-inverse .navbar-brand {
+    color: red;
+	
+}
+
+.navbar-fixed-top{
+	border-width:0 0 3px;
+	border-color:#222;
+	height:50px;	
+}
+
+.animation 
+{	color: blue;
+	font-size:25px;
+    position: relative;
+    /* -webkit-animation: mymove 20s infinite; /* Safari 4.0 - 8.0 */ */
+	-webkit-animation: mymove 6s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: 6;
+    animation: mymove 6s;
+	animation-iteration-count: 6;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+.FrontPageFont
+{
+	color:white;
+	font-size: X-large;
+	margin-top: 70px;
+	line-height: 125%;
+	text-align: justify;
+	text-shadow: 2px 2px red;/* this line for text shadow */
+}
+
+.navbar-toggle{
+		margin-top:-14px;
+}
+
+.about_us_background{
+	background-image:url('../images/spice2.jpg');
+	width:100%;
+	height: auto;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+	
+}
+	
+	/* #6A9A1F- eta peeth color */
+	/* #D43F3F- meroon color */
+	/* #8A0651- begun color */
+	/* #D11250-meroon type */
+	/* #DB5800- komola color */
+	/* #006899- peste  */
+	/* #008F68-sobuj color */
+	
+	
+	
+	
+	
