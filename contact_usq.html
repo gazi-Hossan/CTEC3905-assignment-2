@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Contact Us</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="javascript/gmaps.js"></script>
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/CustomStyle.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="css/pages_media_queries.css" rel="stylesheet">
+		<link href="css/contact_us_styles.css" media="screen" rel="stylesheet"  >
+	</head>
+	<body class="img-responsive contact-us-fed-backgroundImage" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-inverse navbar-fixed-top">
+						<div class="container">
+							<div class="navbar-header">
+								<h1><a class="navbar-brand animation" href="index.html">Bombay Bites</a></h1>
+								<button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar-collapse collapse navbar-right" id="mainNavbar">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="photogallery.html">Photo Gallery</a></li>
+									<li><a href="menu.html">Menu</a></li>
+									<li><a href="about_us.html">About Us</a></li>
+									<li class="active"><a href="contact_us.html">Contact Us</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>	
+			</div>
+			<section class="row">
+				<h4>google maps to navigate </h4>
+				<div id= "google_maps" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-offset-1">
+				
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 tomatoes">
+						<img class="img-responsive" src="images/tomatoes.png" alt="tomatoes"> 
+				</div>
+			</section>
+			<section class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">	
+					<form class="contact_form" action="contact_us.html" method="post" name="contact_form">
+						<ul>
+							<li>
+								 <h2>Contact Us</h2>
+								 <span class="required_notification">* Denotes Required Field</span>
+							</li>
+							<li>
+								<label for="name">Name:</label>
+								<input type="text" id="name" required placeholder="Enter your name"/>
+							</li>
+							<li>
+								<label for="email">Email:</label>
+								<input type="email" id="email" required placeholder="name@something.com"/>
+								<span class="form_hint">Proper format "name@something.com"</span>
+							</li>
+							<li>
+								<label for="website">Phone:</label>
+								<input type="text" id="website" required placeholder="Enter your phone number"/>
+								<span class="form_hint">Proper format "07"</span>
+							</li>
+							<li>
+								<label for="message">Details:</label>
+								<textarea id="message" cols="20" rows="4" required ></textarea>
+							</li>
+							<li>
+								<button class="submit" type="submit">Submit</button>
+							</li>
+						</ul>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<ul class="myList">
+							<li><h4>Bombay Bites Takeaway</h4></li>
+							<li>79 Braunstone Gate,</li>
+							<li>Leicester LE3 5LH</li>
+							<li>Tel: 1162555531</li>
+						</ul>	
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<ul class="myList">
+							<li><h4>Opening Hours</h4></li>
+							<li>MON. 17:30 - 00:00</li>
+							<li>TUE. 11:00 - 00:30</li>
+							<li>WED. 11:00 - 00:30</li>
+							<li>THU. 11:00 - 00:30</li>
+							<li>FRI. 11:00 - 00:30</li>
+							<li>SAT. 11:00 - 00:30</li>
+							<li>SUN. 17:30 - 00:00</li>
+						</ul>	
+				</div>	
+			</section>
+		</div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-r3WgQzd1oeN4r1FF3aiEvvipay7evdM&callback=myMap"></script>
+	</body>
+</html>

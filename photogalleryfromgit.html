@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  +		<title>Photo Gallery</title>
+  
+  		<!-- Bootstrap -->
+  		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  		<link href="css/CustomStyle.css" rel="stylesheet">
+  		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+ +		<link href="css/frontpagemediaqueries.css" rel="stylesheet">
+  	  </head>
+
+ +	  
+ +		<body class="img-responsive fedbackground">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-lg-12">
+  						<nav class="navbar navbar-inverse navbar-fixed-top">
+  							<div class="container">
+  								<div class="navbar-header">
+ 									
+ +									  <h1><a class="navbar-brand animation" href="index.html">Bombay Bites</a></h1>
+ +									
+  									<!-- <a class="navbar-brand" href="#"><img alt="Bombay" class="logo" src="images/home-logo.jpg"></a>
+  										<a class="navbar-brand" href="#"><h1>Bombay Bites</h1></a> -->
+  									<button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
+
+  				<div class="row">
+
+ +					<div class ="col-sm-8 col-md-6 col-lg-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-2">
+  						<div id="imageCarousel" class="carousel slide" data-wrap="true" data-pause="hover" data-interval="2000">
+  							<ol class="carousel-indicators">
+  								<li data-target="imageCarousel" data-slide-to="0" class="active"></li>
+ 
+  				<!-- image gallery -->
+  				<div class="row">
+  					
+ 					
+ 						<div class="panel panel-danger main_imageGallery">
+  	           				 <div class="panel-heading">
+ 				                <button class="btn btn-danger" data-target="#imageGallery1" data-toggle="collapse">Image Gallery</button>
+  	            			 </div>
+ +				            <div class="panel-body collapse " id="imageGallery1"><!-- nested gallery -->
+  								<!-- nested first gallery -->
+
+ +								<div class="panel panel-danger nested_imageGallery">
+ +			           				<div class="panel-heading imageGallery2">
+ +						                <button class="btn btn-danger" data-target="#imageGallery2" data-toggle="collapse">Starter Items</button>
+  			            			</div>
+  						            <div class="panel-body collapse" id="imageGallery2">
+  						                <div class ="col-sm-6 col-md-4 col-lg-3">
+ @@ -199,9 +199,9 @@
+  						            </div>
+  					        	</div><!-- end of first nested gallery -->
+  								
+
+ +								<div class="panel panel-danger nested_imageGallery"><!-- start of second nested gallery -->
+ +			           				<div class="panel-heading imageGallery3">
+ +						                <button class="btn btn-danger" data-target="#imageGallery3" data-toggle="collapse">Main Courses</button>
+  			            			</div>
+  						            <div class="panel-body collapse" id="imageGallery3">
+  						                <div class ="col-sm-6 col-md-4 col-lg-3">
+ @@ -243,8 +243,8 @@
+  						            </div>
+  			        			</div><!-- end of second nested gallery -->
+  							
+
+ +								<div class="panel panel-danger nested_imageGallery"><!-- start of third nested gallery -->
+ +			           				<div class="panel-heading imageGallery4">
+  						                <button class="btn btn-danger" data-target="#imageGallery4" data-toggle="collapse">Side Dishes</button>
+  			            			</div>
+  						            <div class="panel-body collapse" id="imageGallery4">
+ @@ -293,5 +293,5 @@
+  		
+  			</script>
+  	  </body>
+ -	  </div>
+ +	  
+  
