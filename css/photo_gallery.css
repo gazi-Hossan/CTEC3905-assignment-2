@@ -1,15 +1,14 @@
 .fed_background{
-	background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/background/photogallery-background.jpg');
+	background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/background/photogallery.jpg');
 	width:100%;
 	height: auto;
 	background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-	
-	 /* background: rgba(0,0,0,0.9); */
-	  /* opacity: 0.5; */
 }
+
+
  .imageGallery2, 
  .imageGallery3, 
  .imageGallery4{
@@ -22,10 +21,6 @@ button.btn-success, button.btn-warning, button.btn-info{
     
     border-top-right-radius: 66px;
 }
-
-/* p#success_gallery{ */
-	/* color:green; */
-/* } */
 
 .panel.nested_imageGallery{
 		margin-bottom: 0px;

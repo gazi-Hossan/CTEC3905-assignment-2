@@ -16,9 +16,9 @@
 		<link href="css/pages_media_queries.css" rel="stylesheet">
 		<link href="css/contact_us_styles.css" media="screen" rel="stylesheet"  >
 	</head>
-	<body class="img-responsive contact-us-fed-backgroundImage" >
-		<div class="container">
-			<div class="row">
+	<body class="img-responsive contact-us-fed-backgroundImage" ><!-- main body -->
+		<div class="container"><!-- main container -->
+			<div class="row"><!-- starting of navigation bar -->
 				<div class="col-md-12">
 					<nav class="navbar navbar-inverse navbar-fixed-top">
 						<div class="container">
@@ -36,31 +36,15 @@
 									<li><a href="index.html">Home</a></li>
 									<li><a href="photogallery.html">Photo Gallery</a></li>
 									<li><a href="menu.html">Menu</a></li>
-									
 									<li class="active"><a href="contact_us.html">Contact Us</a></li>
-									<li><a href="about_us.html">Project Details</a><li>
 								</ul>
 							</div>
 						</div>
 					</nav>
 				</div>	
-			</div>
+			</div><!-- end of navigation bar -->
 			<section class="row">
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 tomatoes">
-							<img class="img-responsive" src="images/background/tomatoes.png" alt="tomatoes"> 
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-offset-6">
-						<h2>Google maps to navigate </h2>
-						<div id= "google_maps" ></div>
-				</div>
-				<!-- <h4>google maps to navigate </h4> -->
-				<!-- <div id= "google_maps" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-offset-6"> -->
-				
-				<!-- </div> -->
-				
-			</section>
-			<section class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-lg-offset-6">	
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><!-- starting of contacts form -->
 					<form class="contact_form" action="contact_us.html" method="post" name="contact_form">
 						<ul>
 							<li>
@@ -90,52 +74,29 @@
 							</li>
 						</ul>
 					</form>
+				</div><!-- end of contact form -->
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3"><!-- restaurant details -->
+					<ul class="myList">
+						<li><h4>Bombay Bites Takeaway</h4></li>
+						<li>79 Braunstone Gate,</li>
+						<li>Leicester LE3 5LH</li>
+						<li>Tel: 1162555531</li>
+						<li></li>
+						<li></li>
+						<li><h4>Opening Hours</h4></li>
+						<li>MON. 17:30 - 00:00</li>
+						<li>TUE. 11:00 - 00:30</li>
+						<li>WED. 11:00 - 00:30</li>
+						<li>THU. 11:00 - 00:30</li>
+						<li>FRI. 11:00 - 00:30</li>
+						<li>SAT. 11:00 - 00:30</li>
+						<li>SUN. 17:30 - 00:00</li>
+					</ul>	
 				</div>
-				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-						<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						
-							<ul class="myList">
-							<li><h4>Bombay Bites Takeaway</h4></li>
-							<li>79 Braunstone Gate,</li>
-							<li>Leicester LE3 5LH</li>
-							<li>Tel: 1162555531</li>
-							<li></li>
-							<li></li>
-							<li><h4>Opening Hours</h4></li>
-							<li>MON. 17:30 - 00:00</li>
-							<li>TUE. 11:00 - 00:30</li>
-							<li>WED. 11:00 - 00:30</li>
-							<li>THU. 11:00 - 00:30</li>
-							<li>FRI. 11:00 - 00:30</li>
-							<li>SAT. 11:00 - 00:30</li>
-							<li>SUN. 17:30 - 00:00</li>
-						</ul>	
-						
-						</div>
-						
-						
-						
-						</div>
-						<!-- <ul class="myList"> -->
-							<!-- <li><h4>Bombay Bites Takeaway</h4></li> -->
-							<!-- <li>79 Braunstone Gate,</li> -->
-							<!-- <li>Leicester LE3 5LH</li> -->
-							<!-- <li>Tel: 1162555531</li> -->
-						<!-- </ul>	 -->
-				<!-- </div> -->
-				<!-- <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2"> -->
-						<!-- <ul class="myList"> -->
-							<!-- <li><h4>Opening Hours</h4></li> -->
-							<!-- <li>MON. 17:30 - 00:00</li> -->
-							<!-- <li>TUE. 11:00 - 00:30</li> -->
-							<!-- <li>WED. 11:00 - 00:30</li> -->
-							<!-- <li>THU. 11:00 - 00:30</li> -->
-							<!-- <li>FRI. 11:00 - 00:30</li> -->
-							<!-- <li>SAT. 11:00 - 00:30</li> -->
-							<!-- <li>SUN. 17:30 - 00:00</li> -->
-						<!-- </ul>	 -->
-				</div>	
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-lg-offset-1">
+						<h2>Google maps to navigate </h2>
+						<div id= "google_maps" ></div>
+				</div>
 			</section>
 		</div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-r3WgQzd1oeN4r1FF3aiEvvipay7evdM&callback=myMap"></script>
