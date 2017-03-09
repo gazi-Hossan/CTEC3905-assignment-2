@@ -10,7 +10,9 @@
 	 /* background: rgba(0,0,0,0.9); */
 	  /* opacity: 0.5; */
 }
- .imageGallery2, .imageGallery3, .imageGallery4{
+ .imageGallery2, 
+ .imageGallery3, 
+ .imageGallery4{
 	padding-left: 70px;
 	padding-top:0px;
 	padding-bottom:0px;	
@@ -21,9 +23,9 @@ button.btn-success, button.btn-warning, button.btn-info{
     border-top-right-radius: 66px;
 }
 
-p#success_gallery{
-	color:green;
-}
+/* p#success_gallery{ */
+	/* color:green; */
+/* } */
 
 .panel.nested_imageGallery{
 		margin-bottom: 0px;
